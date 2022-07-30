@@ -1,18 +1,17 @@
-from turtle import distance
 import pandas as pd
 import numpy as np
 import pickle
 import streamlit as st
-from yaml import load
 
-st.set_page_config(page_title='House price predictor', layout='wide')
+st.set_page_config(page_title='Employee Attrition Predictor', layout='wide')
 
 def encode(x):
     if x=='Yes':
         return 1
     else: 
         return 0
-# @st.cache(allow_output_mutation=True, show_spinner=False, suppress_st_warning=True)
+
+@st.cache(allow_output_mutation=True, show_spinner=False, suppress_st_warning=True)
 def load_data():
     path= r'C:\Users\DELL\Python files\Employee Attrition\df.pkl'
     with open(path, 'rb') as ref:
