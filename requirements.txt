@@ -32,6 +32,6 @@ scipy==1.8.1
 six==1.16.0
 tabula-py==2.4.0
 tabulate==0.8.10
-scikit-learn==0.24.1
+scikit-learn==1.1.1
 threadpoolctl==3.1.0
 typing_extensions==4.3.0
